@@ -1,0 +1,308 @@
+ /*------------------------------------------------------------------------------------------
+ |			TAG				= 		Evaluation Task
+ |			Work by 	 	=		Raunak Hajela			
+ |-----------------------------------------------------------------------------------------*/
+
+ /*-----------------------------------------------------------------------------------------
+ |									the body section
+ |-----------------------------------------------------------------------------------------*/
+ body{
+ 	width: 100%;
+ 	height: 10000px;
+ 	background-color:#eeeeee;
+ 	margin: 0 auto;	
+ 	
+ }
+a{
+	text-decoration: none;
+	color: inherit;
+}
+@font-face{
+	font-family: "abel";
+	font-size: normal;
+	font-weight: normal;
+	src: url(../font/Abel.ttf);
+}
+@font-face{
+	font-family: "arialn";
+	font-size: normal;
+	font-weight: normal;
+	src: url(../font/arial.ttf);
+}
+@font-face{
+	font-family: "raleway";
+	font-size: normal;
+	font-weight: normal;
+	src: url(../font/raleway.ttf);
+}
+@font-face{
+	font-family: "sans";
+	font-size: normal;
+	font-weight: normal;
+	src: url(../font/sans.ttf);
+}
+/*<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ |								 heading box
+ |-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->*/
+.heading_box{
+	width: 100%;
+	height: 100px;
+	background-color: #111111;
+}
+.heading{
+	color: #ffffff;
+	text-align: center;
+	font-family: abel;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	margin-top: 0px;
+	position: relative;
+    cursor: pointer;
+}
+.heading:hover{
+	color: #0099cc;
+}
+.blank_space_box{
+	width: 100%;
+	height: 120px;
+	
+}
+/*!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ |									jquery link
+ |-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->*/
+.content_space{
+	width: 100%;
+	height: 700px;
+	
+}
+.content_main_box{
+	width: 770px;
+	height: 530px;
+	
+	margin: 0 auto;
+}
+
+.title_slider_space{
+	width: 600px;
+	height: 530px;
+	background-color: #eeeeee;
+	margin-left: 50px;
+	position: absolute;
+	overflow: hidden;
+}
+.title_slider_list{
+	width: 600px;
+	height: 2000px;
+
+}
+.title_slider_list li{
+	width: 600px;
+	height: 60px;
+	background-color: #111111;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.title_slider_list li:nth-child(3){
+	margin-top: 0px;
+	margin-bottom: 225px;
+}
+.button_space{
+	width: 60px;
+	height: 120px;
+	
+	float: right;
+	margin-top: 206px;
+}
+.button_small_space{
+	width: 60px;
+	height: 60px;
+}
+.button_up{
+	width: 60px;
+	height: 60px;
+	background-color: #111111;
+	border-bottom: 1px solid #eeeeee;
+	cursor: pointer;
+	position: absolute;
+}
+#button_up_fake{
+	
+}
+.button_down{
+	width: 60px;
+	height: 60px;
+	background-color: #111111;
+	cursor: pointer;
+	position: absolute;
+	border-top: 1px solid #eeeeee
+}
+#button_down_fake{
+	background-color: #888888;
+	
+}
+#button_down_fake, #button_up_fake{
+	display: none;
+}
+.arrow_up{
+	color: #ffffff;
+	font-family: raleway;
+	font-size: 35px;
+	margin-top: 13px;
+	margin-left: 17px;
+	position: absolute;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+
+}
+#arrow_up_fake{
+	background-color: #888888;
+	
+}
+.arrow_down{
+	color: #ffffff;
+	font-family: raleway;
+	font-size: 35px;
+	margin-top: 13px;
+	margin-left: 22px;
+	position: absolute;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+
+}
+#arrow_down_fake{
+	background-color: #888888;
+}
+.position{
+	color:#ffffff;
+}
+/*+++++++++++++++++++++++++ list inner content section +++++++++++++++++++++++*/
+.title_slider_list li{
+	cursor: pointer;
+}
+.date_space{
+	width: 80px;
+	height: 60px;
+	background-color: transparent;
+	border-right: 1px solid #333333;
+	float: left;
+
+}
+.date{
+	font-family: abel;
+	color: #9e9e9e;
+	text-align: center;
+	margin-top: 22px;
+	width: 80px;
+	/*margin-left: -130px;*/
+}
+.number{
+	color: #f9f9f9;
+}
+.li_arrow{
+	font-family: raleway;
+	color: #f9f9f9;
+	font-size: 30px;
+	font-weight: bolder;
+	float: right;
+	margin-top: -25px;
+	margin-right: 80px;
+}
+
+.title_space{
+	width: 490px;
+	height: 60px;
+	
+	float: right;
+}
+
+.title_heading{
+	width: 500px;
+	font-family: abel;
+	color: #9e9e9e;
+	font-size: 19px;
+	margin-top: 25px;
+	text-align: center;
+
+	
+}
+/*+++++++++++++++++ the news content space +++++++++++++++++++++*/
+.news_content_space{
+	width: 700px;
+	height: 288px;
+	background-color: #ffffff;
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+.full_news_slider{
+	width: 600px;
+	height: 10000px;
+
+}
+.full_news_slider li{
+	width: 700px;
+	height: 288px;
+	margin: 0px;
+	
+	
+	
+}
+
+.full_news_slider li:first-child{
+	margin-top: -576px;
+}
+.full_news_inside_li_space{
+	width: 600px;
+	height: 230px;
+	
+	margin-top: 50px;
+	margin-left: 40px;
+	position: absolute;
+	
+
+
+}
+.full_news_heading_space{
+	width: 600px;
+	height: 80px;
+	
+}
+.full_title{
+	font-family: arialn;
+	margin-right: 10px;
+
+}
+.full_news_heading{
+	font-family: abel;
+	font-size: 30px;
+	color: #111111;
+	letter-spacing: 1px;
+	margin: 0px;
+
+}
+.time_status{
+	font-family: raleway;
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 15px;
+	margin: 0px;
+	color: #b8b8b5;
+
+}
+.full_news_content_space{
+	width: 600px;
+	height: 150px;
+	
+}
+.full_news_content{
+	font-family: arialn;
+	line-height: 22px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #888888;
+	width: 600px;
+	height: 150px;
+}
